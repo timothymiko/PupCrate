@@ -8,245 +8,57 @@
 
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="material-design-iconic-font/css/material-design-iconic-font.min.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>                                                     
 </head>
 
-<body>
+    <body>
+    
+        <div class="section" style="background-color: red;">
+            <div class="container">
 
-    <div class="topBarHolder">
-        <div class="topBarBG"></div>
-        <div class="topBar">
-            <h3>PupCrate</h3>
+                <div class="valign-wrapper" id="img-header">
+                    <img src="http://placehold.it/50x50">
+                    <h3 id="header-text">PupCrate</h3>
+                </div>
+
+
+                <div class="center">
+                    <p>We deliver a box of toys and treats for your dog righ to your door step every month.</p>
+                </div>
+
+                <div class="center" id="email-form">
+
+                    <p>Get notified when we launch and save 25%.</p>
+                    <div class="valign-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input name="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </form>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Notify Me
+                            <i class="mdi-content-send right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            
         </div>
-    </div>
-    
-    <div class="container">
-    <div class="row" style="padding-top:20px">
-        <h3 class="center"><font face="roboto-light">Features</h3>
-    </div>
-        <div class="row center">
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-sync md-3x"></i></font>
-                <p class="roboto"><font size="4">Sync</font></p>
-                <p id="feature-description">Backup your data and sync it across multiple devices using Dropbox or Google Drive.</p>
+        
+        <div class="section" style="background-color: teal;">
+            
+            <div class="container">
+                <h5 class="center">How It Works</h5>
             </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-mode-edit md-3x"></i></font>
-                <p class="roboto"><font size="4">Write</font></p>
-                <p id="feature-description">Write about your dreams. Keep a daily log. Inspire yourself.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-location-on md-3x"></i></font>
-                <p class="roboto"><font size="4">Location</font></p>
-                <p id="feature-description">Automatically add location with your device's GPS or a custom place title.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-local-offer md-3x"></i></font>
-                <p class="roboto"><font size="4">Tags</font></p>
-                <p id="feature-description">Categorize your entries by adding tags to them.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-alarm md-3x"></i></font>
-                <p class="roboto"><font size="4">Reminders</font></p>
-                <p id="feature-description">Create one-time or recurring reminders to encourage you to write in your journal.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-camera-alt md-3x"></i></font>
-                <p class="roboto"><font size="4">Photos</font></p>
-                <p id="feature-description">Attach a photo to an entry to make the memory even better.</p>
-            </div>
+            
         </div>
-        <div class="row center" style="padding-bottom: 20px;">
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-text-format md-3x"></i></font>
-                <p class="roboto"><font size="4">Markdown</font></p>
-                <p id="feature-description">Use markdown syntax to display beautifully formatted text.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-share md-3x"></i></font>
-                <p class="roboto"><font size="4">Sharing</font></p>
-                <p id="feature-description">Share photos and text with Narrate for easy journal entries.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <a href="http://dayoneapp.com" id="invisible-link" target="_blank">
-                    <font class="icon-accent-color"><i class="md-book md-3x"></i></font>
-                    <p class="roboto"><font size="4">Day One</font></p>
-                    <p id="feature-description">Seamlessly sync with your Day One journal through Dropbox.</p>
-                </a>
-            </div>
-            <div class="col l2 m4 s6">
-                <a href="tasker.html" id="invisible-link">
-                    <font class="icon-accent-color"><i class="md-flash-on md-3x"></i></font>
-                    <p class="roboto"><font size="4">Tasker</font></p>
-                    <p id="feature-description">Automatically create new entries or launch the entry editor from Tasker.</p>
-                </a>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-mic md-3x"></i></font>
-                <p class="roboto"><font size="4">Google Now</font></p>
-                <p id="feature-description">Easily create new journal entries using the Note to Self feature.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-restore md-3x"></i></font>
-                <p class="roboto"><font size="4">Automatic Backups</font></p>
-                <p id="feature-description">Automatically backup your journal to the SD card on your phone.</p>
-            </div>
-        </div>
-    </div>
-</div>
-    
-    <div class="container">
-    <div class="row" style="padding-top:20px">
-        <h3 class="center"><font face="roboto-light">Features</h3>
-    </div>
-        <div class="row center">
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-sync md-3x"></i></font>
-                <p class="roboto"><font size="4">Sync</font></p>
-                <p id="feature-description">Backup your data and sync it across multiple devices using Dropbox or Google Drive.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-mode-edit md-3x"></i></font>
-                <p class="roboto"><font size="4">Write</font></p>
-                <p id="feature-description">Write about your dreams. Keep a daily log. Inspire yourself.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-location-on md-3x"></i></font>
-                <p class="roboto"><font size="4">Location</font></p>
-                <p id="feature-description">Automatically add location with your device's GPS or a custom place title.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-local-offer md-3x"></i></font>
-                <p class="roboto"><font size="4">Tags</font></p>
-                <p id="feature-description">Categorize your entries by adding tags to them.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-alarm md-3x"></i></font>
-                <p class="roboto"><font size="4">Reminders</font></p>
-                <p id="feature-description">Create one-time or recurring reminders to encourage you to write in your journal.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-camera-alt md-3x"></i></font>
-                <p class="roboto"><font size="4">Photos</font></p>
-                <p id="feature-description">Attach a photo to an entry to make the memory even better.</p>
-            </div>
-        </div>
-        <div class="row center" style="padding-bottom: 20px;">
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-text-format md-3x"></i></font>
-                <p class="roboto"><font size="4">Markdown</font></p>
-                <p id="feature-description">Use markdown syntax to display beautifully formatted text.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-share md-3x"></i></font>
-                <p class="roboto"><font size="4">Sharing</font></p>
-                <p id="feature-description">Share photos and text with Narrate for easy journal entries.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <a href="http://dayoneapp.com" id="invisible-link" target="_blank">
-                    <font class="icon-accent-color"><i class="md-book md-3x"></i></font>
-                    <p class="roboto"><font size="4">Day One</font></p>
-                    <p id="feature-description">Seamlessly sync with your Day One journal through Dropbox.</p>
-                </a>
-            </div>
-            <div class="col l2 m4 s6">
-                <a href="tasker.html" id="invisible-link">
-                    <font class="icon-accent-color"><i class="md-flash-on md-3x"></i></font>
-                    <p class="roboto"><font size="4">Tasker</font></p>
-                    <p id="feature-description">Automatically create new entries or launch the entry editor from Tasker.</p>
-                </a>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-mic md-3x"></i></font>
-                <p class="roboto"><font size="4">Google Now</font></p>
-                <p id="feature-description">Easily create new journal entries using the Note to Self feature.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-restore md-3x"></i></font>
-                <p class="roboto"><font size="4">Automatic Backups</font></p>
-                <p id="feature-description">Automatically backup your journal to the SD card on your phone.</p>
-            </div>
-        </div>
-    </div>
-</div>
-    
-    <div class="container">
-    <div class="row" style="padding-top:20px">
-        <h3 class="center"><font face="roboto-light">Features</h3>
-    </div>
-        <div class="row center">
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-sync md-3x"></i></font>
-                <p class="roboto"><font size="4">Sync</font></p>
-                <p id="feature-description">Backup your data and sync it across multiple devices using Dropbox or Google Drive.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-mode-edit md-3x"></i></font>
-                <p class="roboto"><font size="4">Write</font></p>
-                <p id="feature-description">Write about your dreams. Keep a daily log. Inspire yourself.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-location-on md-3x"></i></font>
-                <p class="roboto"><font size="4">Location</font></p>
-                <p id="feature-description">Automatically add location with your device's GPS or a custom place title.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-local-offer md-3x"></i></font>
-                <p class="roboto"><font size="4">Tags</font></p>
-                <p id="feature-description">Categorize your entries by adding tags to them.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-alarm md-3x"></i></font>
-                <p class="roboto"><font size="4">Reminders</font></p>
-                <p id="feature-description">Create one-time or recurring reminders to encourage you to write in your journal.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-camera-alt md-3x"></i></font>
-                <p class="roboto"><font size="4">Photos</font></p>
-                <p id="feature-description">Attach a photo to an entry to make the memory even better.</p>
-            </div>
-        </div>
-        <div class="row center" style="padding-bottom: 20px;">
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-text-format md-3x"></i></font>
-                <p class="roboto"><font size="4">Markdown</font></p>
-                <p id="feature-description">Use markdown syntax to display beautifully formatted text.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-share md-3x"></i></font>
-                <p class="roboto"><font size="4">Sharing</font></p>
-                <p id="feature-description">Share photos and text with Narrate for easy journal entries.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <a href="http://dayoneapp.com" id="invisible-link" target="_blank">
-                    <font class="icon-accent-color"><i class="md-book md-3x"></i></font>
-                    <p class="roboto"><font size="4">Day One</font></p>
-                    <p id="feature-description">Seamlessly sync with your Day One journal through Dropbox.</p>
-                </a>
-            </div>
-            <div class="col l2 m4 s6">
-                <a href="tasker.html" id="invisible-link">
-                    <font class="icon-accent-color"><i class="md-flash-on md-3x"></i></font>
-                    <p class="roboto"><font size="4">Tasker</font></p>
-                    <p id="feature-description">Automatically create new entries or launch the entry editor from Tasker.</p>
-                </a>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-mic md-3x"></i></font>
-                <p class="roboto"><font size="4">Google Now</font></p>
-                <p id="feature-description">Easily create new journal entries using the Note to Self feature.</p>
-            </div>
-            <div class="col l2 m4 s6">
-                <font class="icon-accent-color"><i class="md-restore md-3x"></i></font>
-                <p class="roboto"><font size="4">Automatic Backups</font></p>
-                <p id="feature-description">Automatically backup your journal to the SD card on your phone.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-    
-    <script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+
 </html>
