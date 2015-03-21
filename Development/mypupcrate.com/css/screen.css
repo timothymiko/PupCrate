@@ -1,3 +1,8 @@
+center-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav {
     height: 100px;
     background-color: #F8F8F8
@@ -44,17 +49,70 @@ nav a {
 #img-header {
     margin-left: auto;
     margin-right: auto;
-    width: 245px;
+    width: 410px;
     margin-top: 50px;
+    margin-bottom: 0px;
+    height: 100px;
 }
 
 #header-text {
     margin-left: 25px;
+    color: white;
+    font-family: 'Lato', serif;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+#tagline {
+    color: #F0F0F0;
+    font-family: 'Lato', serif;
+    font-size: 24px;
+    font-weight: bold;
+    width: 500px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#sign-up-text {
+    color: #F0F0F0;
+    font-family: 'Lato', serif;
+    font-size: 24px;
+    width: 500px; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 125px;
 }
 
 #email-form {
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    margin-top: 150px;
+    width: 550px;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#email-form-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 425px;
+    height: 75px;
+    top: 75px;
+    position: relative
+}
+
+#submit-button-div {
+    position: relative;
+    margin-top: 20px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#submit-button {
+    background-color: #3f5263 !important;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #3f5263;
 }

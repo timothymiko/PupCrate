@@ -6,6 +6,9 @@
   <title>PupCrate | Monthly Dog Treats &amp; Toys Subscription</title>
   <meta name="description" content="Monthly Dog Treats &amp; Toys Subscription">
 
+<!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -17,32 +20,37 @@
 
     <body>
     
-        <div class="section" style="background-color: red;">
+        <div class="section" style="background-image: url('./imgs/bg-pattern.png');">
             <div class="container">
 
                 <div class="valign-wrapper" id="img-header">
-                    <img src="http://placehold.it/50x50">
-                    <h3 id="header-text">PupCrate</h3>
+                    <img src="./imgs/paw.png">
+                    <p id="header-text">PupCrate</p>
                 </div>
-
 
                 <div class="center">
-                    <p>We deliver a box of toys and treats for your dog righ to your door step every month.</p>
+                    <p id="tagline">We deliver a box of toys and treats for your dog right to your door step every month.</p>
+                </div>
+                
+                <div class="center">
+                    <p id="sign-up-text">Sign up to get notified when we launch and receive 50% off your first month!</p>
                 </div>
 
-                <div class="center" id="email-form">
-
-                    <p>Get notified when we launch and save 25%.</p>
-                    <div class="valign-wrapper">
-                        <form>
-                            <div class="input-field">
-                                <input name="email" type="email" class="validate">
-                                <label for="email">Email</label>
+                <div class="center" id="email-form" style="background: url('./imgs/bone.png') no-repeat center;">
+                    <div class="row" id="email-form-wrapper">
+                        <div class="col s8">
+                        <form action="//datonicgroup.us10.list-manage.com/subscribe/post?u=4573fdafe23248cf946290d54&amp;id=a68f35337b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div class="input-field" id="email-div">
+<!--                                <i class="mdi-communication-email prefix"></i>-->
+                                <input name="EMAIL" type="email" id="mce-EMAIL" class="validate">
+                                <label id="email-label" for="mce-EMAIL">Email</label>
                             </div>
                         </form>
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Notify Me
-                            <i class="mdi-content-send right"></i>
-                        </button>
+                        </div>
+                        <div class="col s4" id="submit-button-div">
+                            <button id="submit-button" class="btn waves-effect waves-light" type="submit" name="action">Notify Me
+                            </button>
+                        </div>
                     </div>
 
                 </div>
@@ -51,6 +59,7 @@
             
         </div>
         
+<!--
         <div class="section" style="background-color: teal;">
             
             <div class="container">
@@ -58,6 +67,7 @@
             </div>
             
         </div>
+-->
         
     </body>
 
