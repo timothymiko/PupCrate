@@ -86,33 +86,65 @@ nav a {
 #email-form {
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
-    height: 250px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 250px;
+    height: 400px;
+    background: url(/imgs/form-bg.png) no-repeat center center;
 }
 
 #email-form-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 250px;
     height: 75px;
-    top: 75px;
-    position: relative
 }
 
-#submit-button-div {
-    position: relative;
-    margin-top: 20px;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
+
+/* label focus color */
+#email-input-field input[type=email]:focus + label {
+ color: #fff;
+}
+/* label underline focus color */
+#email-input-field input[type=email]:focus {
+ border-bottom: 1px solid #fff;
+ box-shadow: 0 1px 0 0 #fff;
+}
+/* valid color */
+#email-input-field input[type=email].valid {
+ border-bottom: 1px solid #fff;
+ box-shadow: 0 1px 0 0 #fff;
+}
+/* icon prefix focus color */
+#email-input-field .prefix.active {
+ color: #fff;
+}
+#mce-EMAIL {
+    color:white;
+}
+
+#get-notified-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: auto;
+    padding-top: 115px;
+    font-size: 110%;
 }
 
 #submit-button {
-    background-color: #3f5263 !important;
+    background-color: #ffffff !important;
 }
 
-.input-field input[type=text]:focus + label {
-    color: #3f5263;
+.one {
+    background-image: url(/imgs/bg-large-optimized.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+@media only screen and (max-wdith: 767px) {
+    .one {
+        background-image: url(/imgs/bg-optimized.png);
+    }
 }
