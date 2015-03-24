@@ -1,3 +1,14 @@
+.section-header {
+    font-family: 'Lato', serif;
+    font-weight: bolder;
+    font-size: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;   
+}
+
+/* One */
 center-horizontal {
     margin-left: auto;
     margin-right: auto;
@@ -196,4 +207,86 @@ nav a {
     .one {
         background-image: url(../imgs/bg-optimized.png);
     }
+}
+
+/* Two */
+#two {
+/*    background: url(../imgs/bg-pattern.png);*/
+    background: #334D5C;
+}
+
+#header-two-text {
+    color: white;
+}
+
+#step-icon {
+    font-size: 40px;
+    color: #DF5A49;
+    display: block;
+}
+
+@media only screen and (max-width : 600px) {
+    #step-icon {
+        margin-top: 25px;
+    }
+}
+
+/* Three */
+#header-three-text {
+    color: black;
+}
+
+#contact-form {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-button {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: #DF5A49;
+}
+
+.contact-input-field input[type=text]:focus + label {
+    color: #DF5A49;
+}
+.contact-input-field input[type=email]:focus + label {
+    color: #DF5A49;
+}
+.contact-input-field textarea[type=text]:focus + label {
+    color: #DF5A49;
+}
+/* label underline focus color */
+.contact-input-field input[type=text]:focus {
+    border-bottom: 1px solid #DF5A49;
+    box-shadow: 0 1px 0 0 #DF5A49;
+}
+.contact-input-field input[type=email]:focus {
+    border-bottom: 1px solid #DF5A49;
+    box-shadow: 0 1px 0 0 #DF5A49;
+}
+.contact-input-field textarea:focus {
+    border-bottom: 1px solid #DF5A49;
+    box-shadow: 0 1px 0 0 #DF5A49;
+}
+/* valid color */
+.contact-input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+.contact-input-field input[type=email].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.contact-input-field .prefix.active {
+    color: #DF5A49;
+}
+
+/* Footer */
+#footer {
+    background: #47484B ;
 }

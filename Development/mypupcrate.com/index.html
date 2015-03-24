@@ -3,27 +3,29 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>PupCrate | Monthly Dog Treats &amp; Toys Subscription</title>
+    
+  <title>PupCrate | Monthly Dog Essentials Subscription</title>
   <meta name="description" content="Monthly Dog Treats &amp; Toys Subscription">
 
 <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
   <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
     <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="material-design-iconic-font/css/material-design-iconic-font.min.css">
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>                                                     
 </head>
 
     <body>
+        
+        
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
     
         <div class="one">
                 
                 <div id="header">
-                    <img id="header-img" src="./imgs/paw.png">
+                    <img id="header-img" src="imgs/paw.png">
                     <p id="header-text">PupCrate</p>
                 </div>
 
@@ -53,15 +55,94 @@
             
         </div>
         
-<!--
-        <div class="section" style="background-color: teal;">
+        <div id="two" class="section">
             
             <div class="container">
-                <h5 class="center">How It Works</h5>
+                
+                <div id="header-two">
+                    <p class="section-header" id="header-two-text">HOW IT WORKS</p>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col m4 s12 ">
+                        <i class="mdi-image-looks-one center-align" id="step-icon"></i>
+                        <div class="card how-it-works-card">
+                            <div class="card-content">
+                              <span class="card-title black-text">Sign up</span>
+                              <p>As soon as we launch, you will be able to create an account and sign up for a subscription. Hurry and submit your email above for 25% off of your first month!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col m4 s12">
+                        <i class="mdi-image-looks-two center-align" id="step-icon"></i>
+                        <div class="card how-it-works-card">
+                            <div class="card-content">
+                              <span class="card-title black-text">Delivery</span>
+                              <p>Each month, we put together a collection of high-quality dog treats, bones, and other essentials. The value of the contents will always exceed the cost of your subscription!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col m4 s12">
+                        <i class="mdi-image-looks-3 center-align" id="step-icon"></i>
+                        <div class="card how-it-works-card">
+                            <div class="card-content">
+                              <span class="card-title black-text">Enjoy</span>
+                              <p>Your crate will be delivered to your doorstep each month. We guarantee your dog and your wallet will both be extremely satisfied.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
             
         </div>
--->
+        
+        <div id="three" class="section">
+            
+            <div class="container">
+                
+                <div id="header-three">
+                    <p class="section-header" id="header-three-text">QUESTIONS</p>
+                </div>
+                
+                <form id="contact-form" action="php/email.php" method="post" enctype="multipart/form-data">
+                      <div class="input-field contact-input-field" >
+                        <i class="mdi-action-account-circle prefix"></i>
+                        <input id="name" name="name" type="text" class="validate" required>
+                        <label for="name">Name</label>
+                      </div>
+                      <div class="input-field col s12 contact-input-field">
+                          <i class="mdi-communication-email prefix"></i>
+                        <input id="email" name="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="input-field col s12 contact-input-field">
+                        <i class="mdi-communication-message prefix"></i>
+                        <textarea id="message" name="message" type="text" class="materialize-textarea" required></textarea>
+                        <label class="message-label" for="message">Messsage</label>
+                      </div>
+                      <button id="contact-button" class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="mdi-content-send right"></i>
+  </button>
+                  </form>
+                
+            </div>
+            
+        </div>
+        
+        <div id="footer" class="section">
+        
+            <div class="container">
+            
+                <p class="center grey-text">Copyright 2015 <a class="grey-text" target="_blank" href="https://datonicgroup.com/">Datonic Group LLC.</a></p>
+                
+            </div>
+            
+        </div>
         
     </body>
 
