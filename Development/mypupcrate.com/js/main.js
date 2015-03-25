@@ -2,10 +2,10 @@ $(function() {
     function unifyHeights() {    
         var maxHeight = 0;    
         $('div.row').children('.col').each(function(){      
-            var height = $(this).outerHeight();      
+            var height = $(this).height();      
             if ( height > maxHeight ) { maxHeight = height; }    
         });    
-        $('.how-it-works-card').css('height', maxHeight); 
+        $('.how-it-works-card').css('height', maxHeight * 0.8); 
     }
     unifyHeights();
 });

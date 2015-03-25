@@ -8,6 +8,6 @@
         $from="From: $name<$email>\r\nReturn-path: $email";
         $subject="Contact Form";
         mail("info@mypupcrate.com", $subject, $message, $from);
-        echo "Email sent!";
+        header('Location: /');
     }
 ?>
